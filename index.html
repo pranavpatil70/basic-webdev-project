@@ -10,89 +10,223 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <i class="bi bi-code-slash me-2"></i>TechSolutions
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                <i class="bi bi-code-slash me-2 text-warning"></i>TechSolutions
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link active fw-semibold" href="index.html">
+                            <i class="bi bi-house-door me-1"></i>Home
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link fw-semibold" href="about.html">
+                            <i class="bi bi-info-circle me-1"></i>About
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link fw-semibold" href="contact.html">
+                            <i class="bi bi-envelope me-1"></i>Contact
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section bg-gradient text-white">
-        <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">Build Amazing Web Experiences</h1>
-                    <p class="lead mb-4">We create modern, responsive websites that help your business grow and succeed in the digital world.</p>
-                    <div class="d-flex gap-3">
-                        <a href="about.html" class="btn btn-light btn-lg">Learn More</a>
-                        <a href="contact.html" class="btn btn-outline-light btn-lg">Get Started</a>
+    <!-- Enhanced hero section with Bootstrap carousel and more utilities -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero-section bg-primary bg-gradient text-white d-flex align-items-center min-vh-100">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="badge bg-warning text-dark mb-3 fs-6 px-3 py-2">
+                                    <i class="bi bi-star-fill me-1"></i>Premium Web Solutions
+                                </div>
+                                <h1 class="display-3 fw-bold mb-4 text-shadow">Build Amazing Web Experiences</h1>
+                                <p class="lead mb-4 fs-5">We create modern, responsive websites that help your business grow and succeed in the digital world.</p>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a href="about.html" class="btn btn-warning btn-lg px-4 py-3 fw-semibold">
+                                        <i class="bi bi-arrow-right-circle me-2"></i>Learn More
+                                    </a>
+                                    <a href="contact.html" class="btn btn-outline-light btn-lg px-4 py-3 fw-semibold">
+                                        <i class="bi bi-rocket-takeoff me-2"></i>Get Started
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                                <img src="/placeholder.svg?height=400&width=500" alt="Web Development" class="img-fluid rounded-4 shadow-lg border border-3 border-warning">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center">
-                    <img src="/placeholder.svg?height=400&width=500" alt="Web Development" class="img-fluid rounded shadow-lg">
+            </div>
+            <div class="carousel-item">
+                <div class="hero-section bg-success bg-gradient text-white d-flex align-items-center min-vh-100">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="badge bg-light text-success mb-3 fs-6 px-3 py-2">
+                                    <i class="bi bi-shield-check me-1"></i>Secure & Reliable
+                                </div>
+                                <h1 class="display-3 fw-bold mb-4">Secure Digital Solutions</h1>
+                                <p class="lead mb-4 fs-5">Enterprise-grade security with cutting-edge technology for your peace of mind.</p>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a href="about.html" class="btn btn-light btn-lg px-4 py-3 fw-semibold text-success">
+                                        <i class="bi bi-shield-lock me-2"></i>Security Features
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                                <img src="/placeholder.svg?height=400&width=500" alt="Security" class="img-fluid rounded-4 shadow-lg border border-3 border-light">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero-section bg-info bg-gradient text-white d-flex align-items-center min-vh-100">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="badge bg-dark mb-3 fs-6 px-3 py-2">
+                                    <i class="bi bi-phone me-1"></i>Mobile First Design
+                                </div>
+                                <h1 class="display-3 fw-bold mb-4">Mobile-First Approach</h1>
+                                <p class="lead mb-4 fs-5">Responsive designs that look perfect on all devices and screen sizes.</p>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a href="contact.html" class="btn btn-dark btn-lg px-4 py-3 fw-semibold">
+                                        <i class="bi bi-device-mobile me-2"></i>View Portfolio
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                                <img src="/placeholder.svg?height=400&width=500" alt="Mobile Design" class="img-fluid rounded-4 shadow-lg border border-3 border-dark">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
 
-    <!-- Features Section -->
-    <section class="py-5">
+    <!-- Enhanced features section with more Bootstrap components -->
+    <section class="py-5 bg-light">
         <div class="container">
             <div class="row text-center mb-5">
                 <div class="col-lg-8 mx-auto">
-                    <h2 class="display-5 fw-bold mb-3">Why Choose Us?</h2>
-                    <p class="lead text-muted">We deliver exceptional web solutions with cutting-edge technology and creative design.</p>
+                    <span class="badge bg-primary fs-6 px-3 py-2 mb-3">Our Services</span>
+                    <h2 class="display-4 fw-bold mb-4 text-primary">Why Choose TechSolutions?</h2>
+                    <p class="lead text-muted fs-5">We deliver exceptional web solutions with cutting-edge technology and creative design that drives results.</p>
                 </div>
             </div>
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
-                                <i class="bi bi-lightning-charge fs-3"></i>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body text-center p-5">
+                            <div class="feature-icon bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4 shadow" style="width: 80px; height: 80px;">
+                                <i class="bi bi-lightning-charge fs-2"></i>
                             </div>
-                            <h5 class="card-title">Fast Performance</h5>
-                            <p class="card-text text-muted">Lightning-fast websites optimized for speed and user experience.</p>
+                            <h5 class="card-title fw-bold fs-4 mb-3">Lightning Fast</h5>
+                            <p class="card-text text-muted mb-4">Optimized for speed with 99.9% uptime guarantee and blazing-fast load times.</p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-primary" style="width: 98%"></div>
+                            </div>
+                            <small class="text-muted">98% Performance Score</small>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
-                                <i class="bi bi-phone fs-3"></i>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body text-center p-5">
+                            <div class="feature-icon bg-success bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4 shadow" style="width: 80px; height: 80px;">
+                                <i class="bi bi-phone fs-2"></i>
                             </div>
-                            <h5 class="card-title">Mobile First</h5>
-                            <p class="card-text text-muted">Responsive designs that look perfect on all devices and screen sizes.</p>
+                            <h5 class="card-title fw-bold fs-4 mb-3">Mobile Responsive</h5>
+                            <p class="card-text text-muted mb-4">Perfect display across all devices with mobile-first responsive design approach.</p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-success" style="width: 100%"></div>
+                            </div>
+                            <small class="text-muted">100% Mobile Optimized</small>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
-                                <i class="bi bi-shield-check fs-3"></i>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body text-center p-5">
+                            <div class="feature-icon bg-warning bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4 shadow" style="width: 80px; height: 80px;">
+                                <i class="bi bi-shield-check fs-2"></i>
                             </div>
-                            <h5 class="card-title">Secure & Reliable</h5>
-                            <p class="card-text text-muted">Built with security best practices and reliable hosting solutions.</p>
+                            <h5 class="card-title fw-bold fs-4 mb-3">Ultra Secure</h5>
+                            <p class="card-text text-muted mb-4">Enterprise-grade security with SSL certificates and regular security updates.</p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-warning" style="width: 95%"></div>
+                            </div>
+                            <small class="text-muted">95% Security Rating</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body text-center p-5">
+                            <div class="feature-icon bg-info bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4 shadow" style="width: 80px; height: 80px;">
+                                <i class="bi bi-palette fs-2"></i>
+                            </div>
+                            <h5 class="card-title fw-bold fs-4 mb-3">Custom Design</h5>
+                            <p class="card-text text-muted mb-4">Unique, brand-focused designs tailored to your business needs and goals.</p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-info" style="width: 92%"></div>
+                            </div>
+                            <small class="text-muted">92% Design Satisfaction</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body text-center p-5">
+                            <div class="feature-icon bg-danger bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4 shadow" style="width: 80px; height: 80px;">
+                                <i class="bi bi-headset fs-2"></i>
+                            </div>
+                            <h5 class="card-title fw-bold fs-4 mb-3">24/7 Support</h5>
+                            <p class="card-text text-muted mb-4">Round-the-clock technical support and maintenance for your peace of mind.</p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-danger" style="width: 99%"></div>
+                            </div>
+                            <small class="text-muted">99% Support Rating</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-lg hover-lift">
+                        <div class="card-body text-center p-5">
+                            <div class="feature-icon bg-dark bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4 shadow" style="width: 80px; height: 80px;">
+                                <i class="bi bi-graph-up-arrow fs-2"></i>
+                            </div>
+                            <h5 class="card-title fw-bold fs-4 mb-3">SEO Optimized</h5>
+                            <p class="card-text text-muted mb-4">Built-in SEO optimization to help your website rank higher in search results.</p>
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-dark" style="width: 94%"></div>
+                            </div>
+                            <small class="text-muted">94% SEO Score</small>
                         </div>
                     </div>
                 </div>
@@ -100,32 +234,153 @@
         </div>
     </section>
 
-    <!-- Stats Section -->
+    <!-- Enhanced stats section with Bootstrap badges and animations -->
+    <section class="py-5 bg-primary bg-gradient text-white">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold mb-3">Our Track Record</h2>
+                    <p class="lead fs-5">Numbers that speak for our excellence and commitment</p>
+                </div>
+            </div>
+            <div class="row text-center g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item p-4 rounded-4 bg-white bg-opacity-10 backdrop-blur h-100">
+                        <div class="mb-3">
+                            <i class="bi bi-trophy-fill fs-1 text-warning"></i>
+                        </div>
+                        <h3 class="display-3 fw-bold text-warning mb-2">250+</h3>
+                        <p class="fs-5 mb-2">Projects Completed</p>
+                        <div class="progress bg-white bg-opacity-25" style="height: 4px;">
+                            <div class="progress-bar bg-warning" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item p-4 rounded-4 bg-white bg-opacity-10 backdrop-blur h-100">
+                        <div class="mb-3">
+                            <i class="bi bi-heart-fill fs-1 text-danger"></i>
+                        </div>
+                        <h3 class="display-3 fw-bold text-danger mb-2">99%</h3>
+                        <p class="fs-5 mb-2">Client Satisfaction</p>
+                        <div class="progress bg-white bg-opacity-25" style="height: 4px;">
+                            <div class="progress-bar bg-danger" style="width: 99%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item p-4 rounded-4 bg-white bg-opacity-10 backdrop-blur h-100">
+                        <div class="mb-3">
+                            <i class="bi bi-calendar-check fs-1 text-success"></i>
+                        </div>
+                        <h3 class="display-3 fw-bold text-success mb-2">8+</h3>
+                        <p class="fs-5 mb-2">Years Experience</p>
+                        <div class="progress bg-white bg-opacity-25" style="height: 4px;">
+                            <div class="progress-bar bg-success" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item p-4 rounded-4 bg-white bg-opacity-10 backdrop-blur h-100">
+                        <div class="mb-3">
+                            <i class="bi bi-clock-fill fs-1 text-info"></i>
+                        </div>
+                        <h3 class="display-3 fw-bold text-info mb-2">24/7</h3>
+                        <p class="fs-5 mb-2">Support Available</p>
+                        <div class="progress bg-white bg-opacity-25" style="height: 4px;">
+                            <div class="progress-bar bg-info" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Added testimonials section with Bootstrap carousel -->
     <section class="py-5 bg-light">
         <div class="container">
-            <div class="row text-center">
-                <div class="col-md-3 mb-4">
-                    <div class="stat-item">
-                        <h3 class="display-4 fw-bold text-primary">150+</h3>
-                        <p class="text-muted">Projects Completed</p>
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <span class="badge bg-success fs-6 px-3 py-2 mb-3">Testimonials</span>
+                    <h2 class="display-4 fw-bold mb-4 text-success">What Our Clients Say</h2>
+                    <p class="lead text-muted fs-5">Don't just take our word for it - hear from our satisfied clients</p>
+                </div>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="card border-0 shadow-lg">
+                                    <div class="card-body p-5 text-center">
+                                        <div class="mb-4">
+                                            <i class="bi bi-quote fs-1 text-success"></i>
+                                        </div>
+                                        <blockquote class="blockquote mb-4">
+                                            <p class="fs-4 text-muted">"TechSolutions transformed our online presence completely. The website is fast, beautiful, and our sales have increased by 150%!"</p>
+                                        </blockquote>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="/placeholder.svg?height=60&width=60" alt="Client" class="rounded-circle me-3" width="60" height="60">
+                                            <div class="text-start">
+                                                <h6 class="fw-bold mb-0">Sarah Johnson</h6>
+                                                <small class="text-muted">CEO, Digital Marketing Pro</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="card border-0 shadow-lg">
+                                    <div class="card-body p-5 text-center">
+                                        <div class="mb-4">
+                                            <i class="bi bi-quote fs-1 text-success"></i>
+                                        </div>
+                                        <blockquote class="blockquote mb-4">
+                                            <p class="fs-4 text-muted">"Outstanding service and support! The team delivered exactly what we needed, on time and within budget."</p>
+                                        </blockquote>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="/placeholder.svg?height=60&width=60" alt="Client" class="rounded-circle me-3" width="60" height="60">
+                                            <div class="text-start">
+                                                <h6 class="fw-bold mb-0">Michael Chen</h6>
+                                                <small class="text-muted">Founder, Tech Startup Inc</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-4">
-                    <div class="stat-item">
-                        <h3 class="display-4 fw-bold text-primary">98%</h3>
-                        <p class="text-muted">Client Satisfaction</p>
-                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-success rounded-circle p-3"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-success rounded-circle p-3"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Added call-to-action section with Bootstrap components -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold mb-3">Ready to Start Your Project?</h2>
+                    <p class="lead fs-5 mb-4 mb-lg-0">Let's create something amazing together. Get in touch with our team today for a free consultation.</p>
                 </div>
-                <div class="col-md-3 mb-4">
-                    <div class="stat-item">
-                        <h3 class="display-4 fw-bold text-primary">5+</h3>
-                        <p class="text-muted">Years Experience</p>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="stat-item">
-                        <h3 class="display-4 fw-bold text-primary">24/7</h3>
-                        <p class="text-muted">Support Available</p>
+                <div class="col-lg-4 text-lg-end">
+                    <div class="d-flex flex-column flex-sm-row flex-lg-column gap-3">
+                        <a href="contact.html" class="btn btn-warning btn-lg px-4 py-3 fw-semibold">
+                            <i class="bi bi-rocket-takeoff me-2"></i>Start Project
+                        </a>
+                        <a href="about.html" class="btn btn-outline-light btn-lg px-4 py-3 fw-semibold">
+                            <i class="bi bi-info-circle me-2"></i>Learn More
+                        </a>
                     </div>
                 </div>
             </div>
@@ -133,60 +388,77 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
+    <footer class="bg-dark text-white py-5 border-top border-secondary">
         <div class="container">
-            <div class="row">
+            <div class="row g-4">
                 <div class="col-lg-4 mb-4">
-                    <h5 class="fw-bold mb-3">
-                        <i class="bi bi-code-slash me-2"></i>TechSolutions
+                    <h5 class="fw-bold mb-4 fs-3">
+                        <i class="bi bi-code-slash me-2 text-warning"></i>TechSolutions
                     </h5>
-                    <p class="text-light">Creating amazing web experiences that help businesses grow and succeed in the digital world.</p>
+                    <p class="text-light fs-6 mb-4">Creating amazing web experiences that help businesses grow and succeed in the digital world with cutting-edge technology.</p>
                     <div class="social-links">
-                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-5"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin fs-5"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-github fs-5"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2 p-2">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2 p-2">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2 p-2">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle p-2">
+                            <i class="bi bi-github"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h6 class="fw-bold mb-3">Services</h6>
+                    <h6 class="fw-bold mb-3 text-warning">Services</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light text-decoration-none">Web Design</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Development</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">SEO</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Consulting</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-text-warning">Web Design</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-text-warning">Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-text-warning">SEO Optimization</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-text-warning">Consulting</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h6 class="fw-bold mb-3">Company</h6>
+                    <h6 class="fw-bold mb-3 text-warning">Company</h6>
                     <ul class="list-unstyled">
-                        <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
-                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
-                        <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-light text-decoration-none hover-text-warning">About Us</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none hover-text-warning">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-text-warning">Blog</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none hover-text-warning">Careers</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">
-                    <h6 class="fw-bold mb-3">Contact Info</h6>
-                    <p class="text-light mb-2">
-                        <i class="bi bi-geo-alt me-2"></i>123 Tech Street, Digital City, DC 12345
-                    </p>
-                    <p class="text-light mb-2">
-                        <i class="bi bi-envelope me-2"></i>hello@techsolutions.com
-                    </p>
-                    <p class="text-light">
-                        <i class="bi bi-phone me-2"></i>+1 (555) 123-4567
-                    </p>
+                    <h6 class="fw-bold mb-3 text-warning">Contact Information</h6>
+                    <div class="contact-info">
+                        <p class="text-light mb-3 d-flex align-items-center">
+                            <i class="bi bi-geo-alt-fill me-3 text-warning"></i>
+                            <span>123 Tech Street, Digital City, DC 12345</span>
+                        </p>
+                        <p class="text-light mb-3 d-flex align-items-center">
+                            <i class="bi bi-envelope-fill me-3 text-warning"></i>
+                            <span>hello@techsolutions.com</span>
+                        </p>
+                        <p class="text-light mb-3 d-flex align-items-center">
+                            <i class="bi bi-phone-fill me-3 text-warning"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </p>
+                        <p class="text-light d-flex align-items-center">
+                            <i class="bi bi-clock-fill me-3 text-warning"></i>
+                            <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <hr class="my-4">
+            <hr class="my-4 border-secondary">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="text-light mb-0">&copy; 2024 TechSolutions. All rights reserved.</p>
+                    <p class="text-light mb-0 fs-6">&copy; 2024 TechSolutions. All rights reserved.</p>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
-                    <a href="#" class="text-light text-decoration-none">Terms of Service</a>
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    <a href="#" class="text-light text-decoration-none me-4 hover-text-warning">Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none hover-text-warning">Terms of Service</a>
                 </div>
             </div>
         </div>
